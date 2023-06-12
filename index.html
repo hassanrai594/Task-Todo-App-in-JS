@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="container-fliud vh-100">
+        <div class="container h-100">
+            <div class="row">
+                <div class="header">
+                    <h1>Todo Task Application</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 task-add-section">
+                    <form action="" class="form-add-task">
+                        <label for="">Task Name</label>
+                        <input type="text" class="form-control task-name-input" minlength="20" required>
+                        <label for="">Task Description</label>
+                        <input type="text" class="form-control task-des-input" minlength="20" required>
+                        <label for="">Date</label>
+                        <input type="date" class="form-control task-date-input" required>
+                        <label for="">Time</label>
+                        <input type="time" class="form-control task-time-input" required>
+                        <button class="btn add-task-btn">Add Task</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="header1">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="row1">
+                    <!-- <div class="col added-tasks">
+                        <div class="task">
+                            <h3 class="added-task-name">Task name</h3>
+                            <p>Task Name</p>
+                        </div>
+                        <div class="task">
+                            <h3 class="added-task-name">Task Description</h3>
+                            <p>Task Description</p>
+                        </div>
+                        <div class="task">
+                            <h3 class="added-task-name">Task Date</h3>
+                            <p>Task Date</p>
+                        </div>
+                        <div class="task">
+                            <h3 class="added-task-name">Task Time</h3>
+                            <p>Task Time</p>
+                        </div>
+                        <div class="action">
+                            <button class="btn edit-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                            <button class="btn delete-btn">Delete</button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-lg-12 task-add-section1">
+                        <form action="" class="form-add-task">
+                            <label for="">Task Name</label>
+                            <input type="text" class="form-control task-name-input1" name="name" id="name" minlength="20">
+                            <label for="">Task Description</label>
+                            <input type="text" class="form-control task-des-input1" name="des" id="des" minlength="20">
+                            <label for="">Date</label>
+                            <input type="date" class="form-control task-date-input1" name="date" id="date">
+                            <label for="">Time</label>
+                            <input type="time" class="form-control task-time-input1" name="time" id="time">
+                            <button type="button" class="btn update-task-btn1" id="submit">Update Task</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="./js/app.js"></script>
+
+</html>
